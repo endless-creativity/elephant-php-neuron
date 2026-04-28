@@ -7,6 +7,18 @@ once it reaches 1.0.
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-04-28
+
+### Changed
+
+- Composer constraint for `endless-creativity/elephant-php` widened to
+  `^0.2 || ^0.3`. The 0.3.0 release expands the upstream public API
+  (`idPrefix`, `ignoreEmptyParagraphs`, `prettyPrint`,
+  `transformDocument`, checkbox form fields, `numStyleLink` chasing)
+  and tightens XML/image security. None of these changes affect the
+  `Converter::extractRawText` and `convertToMarkdown` calls used by
+  `DocxReader`, so the reader works unchanged against either branch.
+
 ## [0.1.0] — 2026-04-28
 
 ### Added
