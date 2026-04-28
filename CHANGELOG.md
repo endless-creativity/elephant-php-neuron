@@ -7,6 +7,8 @@ once it reaches 1.0.
 
 ## [Unreleased]
 
+## [0.1.0] — 2026-04-28
+
 ### Added
 - `DocxReader` implementing Neuron AI's `ReaderInterface` for `.docx`
   files, backed by elephant-php.
