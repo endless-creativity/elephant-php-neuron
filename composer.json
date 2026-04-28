@@ -1,0 +1,51 @@
+{
+    "name": "endless-creativity/elephant-php-neuron",
+    "description": "Neuron AI FileDataLoader reader for .docx files, powered by elephant-php.",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "keywords": ["neuron-ai", "rag", "docx", "word", "file-reader", "elephant-php"],
+    "homepage": "https://github.com/endless-creativity/elephant-php-neuron",
+    "support": {
+        "issues": "https://github.com/endless-creativity/elephant-php-neuron/issues",
+        "source": "https://github.com/endless-creativity/elephant-php-neuron"
+    },
+    "authors": [
+        {
+            "name": "Endless Creativity",
+            "email": "mm@endlesscreativity.it"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "endless-creativity/elephant-php": "^0.2",
+        "neuron-core/neuron-ai": "^3.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.5",
+        "phpstan/phpstan": "^2.0",
+        "laravel/pint": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "EndlessCreativity\\ElephantPhpNeuron\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EndlessCreativity\\ElephantPhpNeuron\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "stan": "./vendor/bin/phpstan analyse",
+        "lint": "./vendor/bin/pint"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
