@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "endless-creativity/elephant-php": "^0.2 || ^0.3",
+        "endless-creativity/elephant-php": "^0.2 || ^0.3 || ^0.4",
         "neuron-core/neuron-ai": "^3.0"
     },
     "require-dev": {

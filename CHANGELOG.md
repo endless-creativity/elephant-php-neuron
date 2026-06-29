@@ -7,6 +7,20 @@ once it reaches 1.0.
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-06-29
+
+### Changed
+
+- Composer constraint for `endless-creativity/elephant-php` widened to
+  `^0.2 || ^0.3 || ^0.4`. The 0.4.0 release adds an `ignoreHiddenText`
+  option that is **on by default**, so runs marked `w:vanish` are now
+  omitted from both text and Markdown output. `DocxReader` keeps this
+  default deliberately: hidden text should not leak into RAG ingestion.
+  0.4.1 is a PHPStan-only fix with no behavioural change. The
+  `Converter::extractRawText` / `convertToMarkdown` calls used by
+  `DocxReader` are unchanged, so the reader works against any of the
+  0.2–0.4 branches.
+
 ## [0.1.1] — 2026-04-28
 
 ### Changed
