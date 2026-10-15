@@ -7,6 +7,18 @@ once it reaches 1.0.
 
 ## [Unreleased]
 
+## [0.1.3] — 2026-10-15
+
+### Changed
+
+- Composer constraint for `endless-creativity/elephant-php` widened to
+  `^0.2 || ^0.3 || ^0.4 || ^0.5`. With 0.5.0, `DocxReader` in
+  `markdown` format renders tables as GFM pipe tables instead of one
+  paragraph per cell, so row/column relationships survive chunking.
+  0.5.0 also stops dropping empty table cells, which previously shifted
+  values into the wrong column. `text` format is unaffected and the
+  `Converter` API used by `DocxReader` is unchanged.
+
 ## [0.1.2] — 2026-06-29
 
 ### Changed
